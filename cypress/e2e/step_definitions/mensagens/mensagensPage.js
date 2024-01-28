@@ -1,6 +1,5 @@
-import { expect } from 'chai';
+const mensagensElement  = require('./mensagensElements');
 
-const mensagensElement  = require('./mensagensElements')
 class MensagensPage{
 
 static Menu(){
@@ -63,8 +62,8 @@ static ExisteConteudoMsn(){
     cy.get(mensagensElement.ElEMENTS._conteudoMsn).should('not.be.empty'); 
 }
 static EnviarArquivo(){
-    cy.get('#btn-send-file > .fa').click(); //btnAbrirModalEnviarArquivo
-    cy.get('#btn-confirm-send-file').click() //btnEviarArquivomoDEL
+    cy.get(mensagensElement.ElEMENTS._btnAbrirModal).click(); 
+    cy.get(mensagensElement.ElEMENTS._btnEnviarArquivo).click()
 }
 
 static msnError(msnError){

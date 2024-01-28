@@ -9,7 +9,7 @@ static Url(){
 }
 
 static LoginCaptchaInvalid(username,password,captcha){
-    debugger;
+   
     if(username === ""){
         cy.get(loginElement.ElEMENTS._userName).should('have.value',username);
     }else{

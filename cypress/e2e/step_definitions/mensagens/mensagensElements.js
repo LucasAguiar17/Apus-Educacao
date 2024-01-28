@@ -17,7 +17,9 @@ export const ElEMENTS = {
     _inputTextContact: '#form-search-contacts > .input-group > .form-control',
     _btnSearchContact: '#button-search-contacts',
     _listContatosModal: '.user-contact > .media',
-    _conteudoMsn: '.chat-box-div'
+    _conteudoMsn: '.chat-box-div',
+    _btnAbrirModal: '#btn-send-file > .fa',
+    _btnEnviarArquivo: '#btn-confirm-send-file'
  
 
 
