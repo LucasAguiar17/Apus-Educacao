@@ -1,3 +1,5 @@
-#Instalar node.js - https://nodejs.org/en (última versão )
-#executar comando: npm install cypress —save -dev
-#Para execuar o cypress: npx cypress open
+# Instalar node.js - https://nodejs.org/en (última versão )
+# Executar comando: npm install cypress —save -dev
+# Para inicializar o cypress: npx cypress open.
+# Clicar na opção END to END.
+# Após abrir a IDE , clique em spec para executar os testes.
