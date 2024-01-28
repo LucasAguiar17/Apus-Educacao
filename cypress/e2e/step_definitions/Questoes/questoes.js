@@ -3,7 +3,7 @@ import {Given, When, Then} from 'cypress-cucumber-preprocessor/steps'
 import  QuestoesPage from './questoesPage';
 import LoginPage  from '../login/loginPage';
 import  AvaliacoesPage from '../Avaliacoes/avaliacoesPage';
-import homePage from '../home/homePage';
+import HomePage from '../home/homePage';
 
 /*
 Given("que o usuário está na página de questões", () => {
@@ -27,10 +27,11 @@ Given("que o usuário está na página de questões", () => {
     LoginPage.Url();
     LoginPage.LoginNOCaptcha(Cypress.env('USER'),Cypress.env('PASSWORD'));
     cy.wait(3000);
+    HomePage.AceitarCookie();
     AvaliacoesPage.AcessarAvaliacoes();
     AvaliacoesPage.ValidaCompoenetesTelaAvaliacao();
     QuestoesPage.btnCadastar();
-    homePage.AceitarCookie();
+  
 });
     When("ele não informa o tipo de questão e o titulo clicar no botão cadastrar questões {string},{string},{string},{string}",(acao,tipoQuestao, titulo) => {
     QuestoesPage.tipoQuestao(acao,tipoQuestao,titulo);
@@ -47,10 +48,11 @@ Given("que o usuário está na página de questões", () => {
         LoginPage.Url();
         LoginPage.LoginNOCaptcha(Cypress.env('USER'),Cypress.env('PASSWORD'));
         cy.wait(3000);
+        HomePage.AceitarCookie();
         AvaliacoesPage.AcessarAvaliacoes();
         AvaliacoesPage.ValidaCompoenetesTelaAvaliacao();
         QuestoesPage.btnCadastar();
-        homePage.AceitarCookie();
+        
     });
         When("ele não informa a etapa da questão e clicar no botão cadastrar questões {string},{string},{string},{string}",(tipoQuestao, titulo,enunciado,etapas) => {
         QuestoesPage.etapas(tipoQuestao,titulo,enunciado,etapas);
@@ -68,10 +70,11 @@ Given("que o usuário está na página de questões", () => {
         LoginPage.Url();
         LoginPage.LoginNOCaptcha(Cypress.env('USER'),Cypress.env('PASSWORD'));
         cy.wait(3000);
+        HomePage.AceitarCookie();
         AvaliacoesPage.AcessarAvaliacoes();
         AvaliacoesPage.ValidaCompoenetesTelaAvaliacao();
         QuestoesPage.btnCadastar();
-        homePage.AceitarCookie();
+       
     });
         When("ele não informar anos faixa etária e clicar no botão cadastrar questões {string},{string},{string},{string},{string}",(tipoQuestao, titulo,enunciado,etapas,anosFaixaEtaria) => {
        
@@ -89,10 +92,11 @@ Given("que o usuário está na página de questões", () => {
         LoginPage.Url();
         LoginPage.LoginNOCaptcha(Cypress.env('USER'),Cypress.env('PASSWORD'));
         cy.wait(3000);
+        HomePage.AceitarCookie();
         AvaliacoesPage.AcessarAvaliacoes();
         AvaliacoesPage.ValidaCompoenetesTelaAvaliacao();
         QuestoesPage.btnCadastar();
-        homePage.AceitarCookie();
+      
     });
         When("ele não informar a experiência e clicar no botão cadastrar questões {string},{string},{string},{string},{string},{string}",(tipoQuestao, titulo,enunciado,etapas,anosFaixaEtaria,campoExperiencia) => {
        
@@ -111,10 +115,11 @@ Given("que o usuário está na página de questões", () => {
         LoginPage.Url();
         LoginPage.LoginNOCaptcha(Cypress.env('USER'),Cypress.env('PASSWORD'));
         cy.wait(3000);
+        HomePage.AceitarCookie();
         AvaliacoesPage.AcessarAvaliacoes();
         AvaliacoesPage.ValidaCompoenetesTelaAvaliacao();
         QuestoesPage.btnCadastar();
-        homePage.AceitarCookie();
+       
     });
         When("ele não informar a habilidade BNCC e clicar no botão cadastrar questões {string},{string},{string},{string},{string},{string}",(tipoQuestao, titulo,enunciado,etapas,anosFaixaEtaria,campoExperiencia) => {
        
@@ -133,10 +138,11 @@ Given("que o usuário está na página de questões", () => {
         LoginPage.Url();
         LoginPage.LoginNOCaptcha(Cypress.env('USER'),Cypress.env('PASSWORD'));
         cy.wait(3000);
+        HomePage.AceitarCookie();
         AvaliacoesPage.AcessarAvaliacoes();
         AvaliacoesPage.ValidaCompoenetesTelaAvaliacao();
         QuestoesPage.btnCadastar();
-        homePage.AceitarCookie();
+        
     });
         When("ele não informar a habilidade BNCC e clicar no botão adicionar habilidade {string},{string},{string},{string},{string},{string}",(tipoQuestao, titulo,enunciado,etapas,anosFaixaEtaria,campoExperiencia) => {
        
@@ -155,10 +161,11 @@ Given("que o usuário está na página de questões", () => {
         LoginPage.Url();
         LoginPage.LoginNOCaptcha(Cypress.env('USER'),Cypress.env('PASSWORD'));
         cy.wait(3000);
+        HomePage.AceitarCookie();
         AvaliacoesPage.AcessarAvaliacoes();
         AvaliacoesPage.ValidaCompoenetesTelaAvaliacao();
         QuestoesPage.btnCadastar();
-        homePage.AceitarCookie();
+       
     });
         When("ele não informar as alternativas e clicar no botão cadastrar {string},{string},{string},{string},{string},{string},{string}",(tipoQuestao, titulo,enunciado,etapas,anosFaixaEtaria,campoExperiencia,habilidade) => {
        
@@ -180,10 +187,11 @@ Given("que o usuário está na página de questões", () => {
         LoginPage.Url();
         LoginPage.LoginNOCaptcha(Cypress.env('USER'),Cypress.env('PASSWORD'));
         cy.wait(3000);
+        HomePage.AceitarCookie();
         AvaliacoesPage.AcessarAvaliacoes();
         AvaliacoesPage.ValidaCompoenetesTelaAvaliacao();
         QuestoesPage.btnCadastar();
-        homePage.AceitarCookie();
+       
     });
         When("ele não informar as duas alternativas e clicar no botão cadastrar {string},{string},{string},{string},{string},{string},{string},{string}",(tipoQuestao, titulo,enunciado,etapas,anosFaixaEtaria,campoExperiencia,habilidade,alternativas) => {
        
@@ -202,10 +210,11 @@ Given("que o usuário está na página de questões", () => {
         LoginPage.Url();
         LoginPage.LoginNOCaptcha(Cypress.env('USER'),Cypress.env('PASSWORD'));
         cy.wait(3000);
+        HomePage.AceitarCookie();
         AvaliacoesPage.AcessarAvaliacoes();
         AvaliacoesPage.ValidaCompoenetesTelaAvaliacao();
         QuestoesPage.btnCadastar();
-        homePage.AceitarCookie();
+        
     });
         When("ele informma todos os dados para a questão do tipo objetiva e clicar no botão cadastrar {string},{string},{string},{string},{string},{string},{string},{string},{string}",(tipoQuestao, titulo,enunciado,etapas,anosFaixaEtaria,campoExperiencia,habilidade,alternativas,alternativas2) => {
        
