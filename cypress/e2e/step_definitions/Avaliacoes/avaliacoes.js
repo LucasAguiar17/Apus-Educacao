@@ -5,6 +5,7 @@ import LoginPage  from '../login/loginPage';
 import homePage from '../home/homePage';
 
 
+
 Given("que o usuário está na página de Mensagens", () => {
     LoginPage.Url();
     LoginPage.LoginNOCaptcha(Cypress.env('USER'),Cypress.env('PASSWORD'));
